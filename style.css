@@ -1,0 +1,218 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #5F8D4E;
+    color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: #E5D9B6;
+    transform: rotate(2deg);
+}
+
+.btn {
+    margin-right: 15px;
+    border: none;
+    font-size: 20px;
+    color: #222;
+    font-weight: bolder;
+    padding: 6px 12px;
+    background-color: #E5D9B6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 12px;
+}
+
+li a{
+    transition: all .5s ease-in-out 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: #E5D9B6;
+    transform: rotate(2deg);
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bolder;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.imgFoto {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.content {
+    background-image: url('assets/foto/dipta.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.isiContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    color: #222;
+    background: transparent;
+    padding: 20px;
+}
+
+.description-content {
+    background: #E5D9B6;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.mgTop {
+    margin-top: 10px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-item {
+    text-align: center;
+    width: 25%;
+    background: #E5D9B6;
+    padding: 18px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 3);
+    border-radius: 5px;
+}
+
+.title-card {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.description-card {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.gambar {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background: #5F8D4E;
+}
+
+@media screen and (max-width : 500px){
+    .card {
+        flex-direction: column;
+    }
+    .card-item {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .intro {
+        margin-top: 20px;
+    }
+    .imgFoto {
+        padding: 0;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #5F8D4E;
+        z-index: 9;
+    }
+    footer {
+        margin-bottom: 80px;
+    }
+}
